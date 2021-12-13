@@ -6,47 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="{% static 'assets/faq/css/style.css'%}">
-    <link rel="stylesheet" href="{% static 'assets/faq/css/head.css'%}">
-    <link rel="shortcut icon" type="image/png" href="{% static 'assets/main/favicon.png'%}"/>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4D2PNVR8Z"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'G-L4D2PNVR8Z');
-		</script>
-
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/head.css">
 </head>
 <body>
-<div class="dropMenu">
-	<ul>
-		<li><a href="##">Catalog » </a></li>
-		<li><a href="##">Products » </a></li>
-		<li><a href="##">Career paths » </a></li>
-		<li><a href="##">Resources » </a></li>
-		<li><a href="##">For Business » </a></li>
-		<div class="mob1">
-		{% if user.is_authenticated %}
-							<p>Hi, {{user.username}}</p>
-			<a href="{% url 'update' user.profile.id %}">Edit</a>
-							<a href="{% url 'logout' %}"><button class="btn" id='logout'>LogOut</button></a>
-							{% else %}
-							<a href="{% url 'login' %}"><button class="btn" id="login">LogIn</button></a>
-							</div>
-							<a href="{% url 'register' %}"><button class="btn1" id="btn1">Register</button></a>
-							{% endif %}
 
-	</ul>
-	<div class="Close">X</div>
-</div>
 			<!-- //---------------------------------- -->
 			<div class="header">
 				<div class="sub_header">
 					<div class="logo">
-						<img src="{% static 'assets/main/logo.png'%}" alt="logo" />
+						<img src="##" alt="logo" />
 					</div>
 					<div class="menu_item">
 						<ul>
@@ -73,18 +42,12 @@
 
 						</ul>
 						<div class="buttons">
-							{% if user.is_authenticated %}
-							<p>Hi, {{user.username}}</p>
-							<a href="{% url 'update' user.profile.id %}">Edit</a>
-							<a href="{% url 'logout' %}"><button id='logout'>LogOut</button></a>
-							{% else %}
-							<a href="{% url 'login' %}"><button id="login">LogIn</button></a>
-							<a href="{% url 'register' %}"><button id="register">Register</button></a>
-							{% endif %}
+							<a href="##"><button id="login">LogIn</button></a>
+							<a href="##"><button id="register">Register</button></a>
 						</div>
 					</div>
 					<div class="ham">
-						<img src="{% static 'assets/main/menu.png'%}" alt="menu" />
+						<img src="##" alt="menu" />
 					</div>
 				</div>
 			</div>
@@ -92,13 +55,13 @@
 <section class="home" id="home">
 
     <div class="image">
-        <img src="{% static 'assets/faq/images/home-img.svg'%}" alt="">
+        <img src="##" alt="">
     </div>
 
     <div class="content">
         <h3> <span class="line-down">We're here to help</span></h3>
         <p>Below you'll find answers to the questions we get asked the most about techsnap courses, Live mentorship, Career paths etc.. If you havea question that you can't find the answer to, please use the contact us page</p>
-        <a href="{% url 'contact' %}" class="btn">conatct us</a>
+        <a href="##" class="btn">conatct us</a>
     </div>
 
 </section>
